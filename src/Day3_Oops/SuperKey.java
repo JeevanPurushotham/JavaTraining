@@ -4,7 +4,7 @@ public class SuperKey
 {
 	public void FirstMethod()
 	{
-		System.out.println("Land");
+		System.out.println("which land is suitable for grow");
 	}
  }
  class Cotton extends SuperKey
@@ -24,14 +24,14 @@ class Potatoes extends Cotton
 {
 	public void PotatoesMethod()
 	{
-		FirstMethod();
+		super.FirstMethod();
 		System.out.println("Red soil");
 		System.out.println("it is good to grow");
 	}
 	public static void main(String[] args) 
 	{
 		Potatoes p=new Potatoes();
-		//p.PotatoesMethod();
+		p.PotatoesMethod();
 		p.CottonMethod();
 	}
 }
