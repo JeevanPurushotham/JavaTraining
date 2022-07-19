@@ -1,4 +1,4 @@
-package Day3_Oops;
+package Day3_Oops.Constractor;
 
 public class Constractor {
    String Name;

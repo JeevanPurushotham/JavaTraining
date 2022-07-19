@@ -1,4 +1,4 @@
-package Day3_Oops;
+package Day3_Oops.MethodOverloading;
 
 public class MethodOverloading
 {

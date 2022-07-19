@@ -3,7 +3,7 @@ package Day3_Oops.MethodRidding;
 public class Android {
   public void ShowApp()
   {
-	  System.out.println("Showing how much application we can instal");
+	  System.out.println("Showing how much application we can install");
   }
 }
 class Samsung extends Android{ 
