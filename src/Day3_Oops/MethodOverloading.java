@@ -1,11 +1,7 @@
 package Day3_Oops;
 
 public class MethodOverloading
-{// Java program to demonstrate working of method
-	// overloading in Java.
-
-	
-
+{
 		// Overloaded sum(). This sum takes two int parameters
 		public int sum(int x, int y)
 		{
