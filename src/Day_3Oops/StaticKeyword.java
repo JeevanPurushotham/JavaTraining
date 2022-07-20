@@ -1,4 +1,4 @@
-package Day3_Oops;
+package Day_3Oops;
 
 public class StaticKeyword {
 	static String UnivercityNo="4PS18EC406";

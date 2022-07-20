@@ -1,4 +1,4 @@
-package Day3_Oops;
+package Day_3Oops;
 
 public class SuperKey 
 {

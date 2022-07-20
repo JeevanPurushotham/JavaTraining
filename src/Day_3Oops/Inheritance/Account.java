@@ -1,4 +1,4 @@
-package Day3_Oops.Inheritance;
+package Day_3Oops.Inheritance;
 
 public class Account {
 	public void user(long accNO,double bal,String name)

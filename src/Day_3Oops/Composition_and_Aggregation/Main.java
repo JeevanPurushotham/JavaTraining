@@ -1,4 +1,4 @@
-package Day3_Oops.Composition_and_Aggregation;
+package Day_3Oops.Composition_and_Aggregation;
 
 public class Main {
 	public static void main(String[] args)

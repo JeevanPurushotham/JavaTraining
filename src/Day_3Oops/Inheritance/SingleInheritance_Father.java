@@ -1,4 +1,4 @@
-package Day3_Oops.Inheritance;
+package Day_3Oops.Inheritance;
 
 public class SingleInheritance_Father {
 	public void skincolor()

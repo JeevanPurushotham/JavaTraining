@@ -1,4 +1,4 @@
-package Day3_Oops.MethodOverloading;
+package Day_3Oops.MethodOverloading;
 
 public class MethodOverloading
 {
@@ -10,7 +10,7 @@ public class MethodOverloading
 
 		// Overloaded sum(). This sum takes three int parameters
 		public int sum(int x, int y, int z)
-		{
+		{ 
 			return (x + y + z);
 		}
 
@@ -24,7 +24,7 @@ public class MethodOverloading
 		public static void main(String args[])
 		{
 			 MethodOverloading s = new  MethodOverloading();
-			System.out.println(s.sum(10, 20));
+			System.out.println(s.sum(10,20));
 			System.out.println(s.sum(10, 20, 30));
 			System.out.println(s.sum(10.5, 20.5));
 		}

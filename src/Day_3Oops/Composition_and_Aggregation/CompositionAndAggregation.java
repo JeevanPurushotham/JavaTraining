@@ -1,4 +1,4 @@
-package Day3_Oops.Composition_and_Aggregation;
+package Day_3Oops.Composition_and_Aggregation;
     //Class 1
 public class CompositionAndAggregation {
 	private String name;

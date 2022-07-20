@@ -1,4 +1,4 @@
-package Day3_Oops.MethodRidding;
+package Day_3Oops.MethodRidding;
 
 public class Android {
   public void ShowApp()
@@ -29,5 +29,7 @@ class OnePlus extends Android
 	public static void main(String[] args) {
 		Android a=new Android();
 		a.ShowApp();
+		OnePlus o=new OnePlus();
+		o.ShowApp();
 	}
 }
