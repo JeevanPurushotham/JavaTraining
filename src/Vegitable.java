@@ -46,7 +46,7 @@ class Human implements Vegitable // human class implementing vegetable interface
 
 class FullOopsConcept {
 	public static void main(String[] args) { // main method for give access to all method
-		Vegitable v = new Human();
+		Vegitable v = new Human();      //Upcasting
 		v.carrot();
 		v.Tomato();
 	}
