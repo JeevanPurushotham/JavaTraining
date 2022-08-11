@@ -12,7 +12,7 @@ public class BufferReaderAndBufferWritter {
 	public static void main(String[] args) throws IOException {
 		// creation the file
 		BufferedWriter buffer = new BufferedWriter(
-				new FileWriter("D:\\Programs\\JavaTraining\\src\\Jeevan\\fileTwo.txt"));
+				new FileWriter("src\\Jeevan\\fileTwo.txt"));
 
 		buffer.write("hello\n");
 		buffer.write("this is jeevan");
@@ -21,16 +21,16 @@ public class BufferReaderAndBufferWritter {
 		buffer.write("\nworking properly");
 		buffer.close();
 		// creating another folder using file class
-		File file = new File("D:\\Programs\\JavaTraining\\src\\Jeevan\\fileThree.txt");
+		File file = new File("src\\Jeevan\\fileThree.txt");
 		file.createNewFile();
 		System.out.println(" created");
-		BufferedWriter bu = new BufferedWriter(new FileWriter("D:\\Programs\\JavaTraining\\src\\Jeevan\\fileOne.txt"));
+		BufferedWriter bu = new BufferedWriter(new FileWriter("src\\Jeevan\\fileOne.txt"));
 		bu.write("hi");
 		bu.write("hello");
 		bu.close();
 
 		BufferedReader reader = new BufferedReader(
-				new FileReader("D:\\Programs\\JavaTraining\\src\\Jeevan\\fileOne.txt"));// reading
+				new FileReader("src\\Jeevan\\fileOne.txt"));// reading
 
 		String a = null;
 		while ((a = reader.readLine()) != null) {
@@ -40,7 +40,7 @@ public class BufferReaderAndBufferWritter {
 
 		System.out.println("..................................................");
 
-		BufferedReader reader1 = new BufferedReader(new FileReader("D:\\Programs\\JavaTraining\\src\\Jeevan\\fileThree.txt"));// reading
+		BufferedReader reader1 = new BufferedReader(new FileReader("src\\Jeevan\\fileThree.txt"));// reading
 
 		String a1 = null;
 		while ((a1 = reader1.readLine()) != null) {
