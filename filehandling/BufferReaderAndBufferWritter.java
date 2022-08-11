@@ -9,55 +9,62 @@ import java.io.IOException;
 
 public class BufferReaderAndBufferWritter {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		// creation the file
-		BufferedWriter buffer = new BufferedWriter(
-				new FileWriter("src\\Jeevan\\fileTwo.txt"));
+		BufferedWriter buffer;
+		BufferedWriter bu = null;
+		try {
+			buffer = new BufferedWriter(new FileWriter("src\\Jeevan\\fileTwo.txt"));
+			buffer.write("hello\n");
+			buffer.write("this is jeevan");
+			buffer.write("\ni think ");
+			buffer.write("\nthis program");
+			buffer.write("\nworking properly");
+			buffer.close();
+			// creating another folder using file class
+			File file = new File("src\\Jeevan\\fileThree.txt");
+			file.createNewFile();
+			System.out.println(" created");
+			bu = new BufferedWriter(new FileWriter("src\\Jeevan\\fileOne.txt"));
+			bu.write("hi");
+			bu.write("hello");
 
-		buffer.write("hello\n");
-		buffer.write("this is jeevan");
-		buffer.write("\ni think ");
-		buffer.write("\nthis program");
-		buffer.write("\nworking properly");
-		buffer.close();
-		// creating another folder using file class
-		File file = new File("src\\Jeevan\\fileThree.txt");
-		file.createNewFile();
-		System.out.println(" created");
-		BufferedWriter bu = new BufferedWriter(new FileWriter("src\\Jeevan\\fileOne.txt"));
-		bu.write("hi");
-		bu.write("hello");
-		bu.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				bu.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 
-		BufferedReader reader = new BufferedReader(
-				new FileReader("src\\Jeevan\\fileOne.txt"));// reading
+			BufferedReader reader = null;
+			BufferedReader reader1 = null;
+			try {
+				reader = new BufferedReader(new FileReader("src\\Jeevan\\fileOne.txt"));
+				// reading
 
-		String a = null;
-		while ((a = reader.readLine()) != null) {
-			System.out.println(a);
+				String a = null;
+				while ((a = reader.readLine()) != null) {
+					System.out.println(a);
+				}
+				// reading
+				reader1 = new BufferedReader(new FileReader("src\\Jeevan\\fileThree.txt"));
+
+				String a1 = null;
+				while ((a1 = reader1.readLine()) != null) {
+					System.out.println(a1);
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					reader1.close();
+					reader.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
 		}
-		reader.close();
-
-		System.out.println("..................................................");
-
-		BufferedReader reader1 = new BufferedReader(new FileReader("src\\Jeevan\\fileThree.txt"));// reading
-
-		String a1 = null;
-		while ((a1 = reader1.readLine()) != null) {
-			System.out.println(a1);
-		}
-		reader1.close();
-
-		System.out.println("...................................................");
-		if (file.isHidden()) {
-			System.out.println("The specified file is hidden");
-		} else {
-			System.out.println("The specified file is not hidden");
-		}
-
-		// here delete the file using delete method
-		file.delete();
-
 	}
-
 }
