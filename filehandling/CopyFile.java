@@ -11,9 +11,9 @@ public class CopyFile {
 		FileOutputStream outstream = null;
 
 		try {
-			
-			File infile = new File("D:\\Programs\\JavaTraining\\src\\fileOne.txt");
-			File outfile = new File("D:\\Programs\\JavaTraining\\src\\fileTwo.txt");
+
+			File infile = new File("src\\fileOne.txt");
+			File outfile = new File("src\\fileTwo.txt");
 			infile.createNewFile();
 			outfile.createNewFile();
 
@@ -30,15 +30,20 @@ public class CopyFile {
 			while ((length = instream.read(buffer)) > 0) {
 				outstream.write(buffer, 0, length);
 			}
-
-			// Closing the input/output file streams
-			instream.close();
-			outstream.close();
-
 			System.out.println("File copied successfully!!");
 
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
+		} finally {
+			try {
+				// Closing the input/output file streams
+				instream.close();
+				outstream.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
 		}
 	}
 }
