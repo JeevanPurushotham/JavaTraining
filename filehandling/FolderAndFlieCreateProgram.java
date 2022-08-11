@@ -6,7 +6,7 @@ import java.io.IOException;
 public class FolderAndFlieCreateProgram {
 
 	public static void main(String[] args) {
-		File file = new File("D:\\Programs\\JavaTraining\\src\\Jeevan");
+		File file = new File("src\\Jeevan");
 		if (!file.mkdir()) {
 			file.mkdir();
 			System.out.println("folder created");
@@ -14,7 +14,7 @@ public class FolderAndFlieCreateProgram {
 			System.out.println("already created");
 		}
 		try {
-			File fileCreate = new File("D:\\Programs\\JavaTraining\\src\\Jeevan\\jee.txt");
+			File fileCreate = new File("src\\Jeevan\\jee.txt");
 			if (!fileCreate.createNewFile()) {
 				// reateNewfile method used to create file
 				fileCreate.createNewFile();
