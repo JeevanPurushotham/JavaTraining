@@ -20,7 +20,7 @@ public class AddParking {
         try (Connection connection = DriverManager.getConnection(url, user, password);
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT)) {
             preparedStatement.setInt(1, 2);
-            preparedStatement.setString(2, "abcd5");
+            preparedStatement.setString(2, "Jeevan");
             preparedStatement.setString(3, "10 slots");
 
 
