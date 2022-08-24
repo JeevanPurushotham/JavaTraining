@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class AddParking {
-	private final String url = "jdbc:postgresql://localhost/jdbc";
+	private final String url = "jdbc:postgresql://localhost/jeevan";
     private final String user = "postgres";
     private final String password = "123456";
 
@@ -21,7 +21,7 @@ public class AddParking {
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT)) {
             preparedStatement.setInt(1, 2);
             preparedStatement.setString(2, "Jeevan");
-            preparedStatement.setString(3, "10 slots");
+            preparedStatement.setString(3, "5 slot");
 
 
             System.out.println(preparedStatement);
